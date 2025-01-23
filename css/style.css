@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100vh; /* define altura da página */
+  scroll-behavior: smooth; /* faz com que qualquer rolagem que ocorra de forma suave*/
+}
+body {
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1280px; /* determina a largura dos container em no máximo, 1280 pixels de largura. */
+  margin: auto; /* centraliza o container  */
+}
+/* HOME */
+.banner {
+  height: 50vh;
+  background-position: center center; /* centralizar a imagem */
+  background-repeat: no-repeat; /* não repetir */
+  background-size: cover; /* não repetir */
+  background-attachment: fixed;
+  background-color: #06d0e0;
+}
+.container_banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* O vídeo ocupa toda a largura disponível */
+}
+.img01 {
+  padding: 8%;
+  width: 60%;
+}
+.bemvindo {
+  text-align: center;
+  padding-top: 12%;
+  font-size: 2rem;
+  color: #06d0e0; /* Cor do título */
+  font-family: "Parkinsans", serif;
+  font-weight: 600;
+}
+
+/* -------------------------------------------------------- */
+/* ESTILO PARA AS IMAGENS DE FUNDO */
+.page-section {
+  background-image: url("https://img.freepik.com/vetores-gratis/fundo-abstrato-branco-minimalista_23-2148816119.jpg?t=st=1736526663~exp=1736530263~hmac=b6b1369075c93b455988d6991e929ce7458106d6726477f337c13729b240000d&w=1380");
+  /* Faz com que a imagem de fundo cubra todo o elemento, mantendo sua proporção. */
+  background-size: cover; /* não repetir */
+  background-position: center center; /* centralizar a imagem */
+}
+/* ----------------------------------------------------- */
+
+/* FUNDO DA PÁGINA QUEM SOMOS */
+.page-section-1 {
+  background-color: rgb(34, 93, 128);
+  /* Faz com que a imagem de fundo cubra todo o elemento, mantendo sua proporção. */
+  background-size: cover; /* não repetir */
+  background-position: center center; /* centralizar a imagem */
+}
+/* PARAGRAFO DE QUEM SOMOS ESTA OK*/
+.row .quem_somos p {
+  font-size: 1.2rem;
+  font-family: "Parkinsans", serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: justify;
+  text-indent: 2em; /* Espaçamento na primeira linha */
+  padding: 10%;
+}
+.row .quem_somos {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Opcional: centraliza verticalmente */
+}
+.quem_somos {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Opcional: centraliza verticalmente */
+  padding: 6%;
+}
+.row {
+  margin-bottom: 20px;
+}
+/* MANIPULAÇÃO DO VIDEO*/
+.video-container {
+  position: relative;
+  width: 100%; /* O vídeo ocupa toda a largura disponível */
+  padding-bottom: 56.25%; /* Proporção de 16:9 (altura/largura = 9/16 = 0.5625) */
+  height: 0; /* Altura inicial zerada, será ajustada pelo padding */
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+/* MANIPULAÇÃO DOS TITULOS */
+.section-heading h2 {
+  text-align: center;
+  padding-top: 8%;
+  font-size: 4rem;
+  color: rgb(0, 44, 83); /* Cor do título */
+  font-family: "Parkinsans", serif;
+  font-weight: 600;
+}
+.section-heading h3 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255); /* Cor do título */
+  font-family: "Parkinsans", serif;
+  font-weight: 400;
+}
+/* MANIPULAÇÃO DO MODAL IMAGENS DOS APARTAMENTOS  */
+.modal-fullscreen .modal-dialog {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.modal-fullscreen .modal-content {
+  height: 100%;
+  border-radius: 0;
+}
+/* Ajusta a altura da imagem */
+.modal-fullscreen .modal-body {
+  height: calc(100% - 56px); /* Ajuste para evitar sobreposição do cabeçalho */
+  display: flex;
+  justify-content: center; /* Centraliza a imagem */
+  align-items: center; /* Centraliza a imagem */
+}
+/* A imagem será ajustada para a altura total, sem distorção */
+.modal-fullscreen img {
+  object-fit: contain; /* Faz a imagem se ajustar à área disponível sem distorção */
+  max-height: 100%;
+  max-width: 100%;
+}
+/* MANIPULAÇÃO Apartamentos Disponíveis */
+.team-member {
+  text-align: center;
+}
+.team-member img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+}
+.team-member img:hover {
+  transform: scale(1.3); /* Efeito de zoom na imagem ao passar o mouse */
+}
+/* MANIPULAÇÃO DO Título Apartamentos Disponíveis */
+.ap_txt h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-top: 10%;
+  margin: 15px;
+  color: rgb(0, 44, 83); /* Cor dos nomes das raças */
+  font-family: "Parkinsans", serif;
+  text-align: center;
+}
+.ap_disponivel {
+  padding: 3% 15%;
+}
+.ap_txt {
+  font-size: 1.3rem;
+  text-align: center;
+}
+/* MANIPULAÇÃO DO PARAGRAFO Apartamento */
+.ap_txt p {
+  padding: 20px;
+  text-align: justify;
+  font-size: 1rem;
+  color: #2e2e2e;
+  margin-top: 10px;
+  font-family: "Parkinsans", serif;
+  font-weight: 400;
+}
+/* LINK DO Apartamento */
+.ap_txt a {
+  background-color: #06d0e0;
+  color: #000;
+  text-align: center;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-family: "Parkinsans", serif;
+  font-size: 1rem;
+}
+.ap_txt a:hover {
+  color: #ffffff;
+}
+/* --------------------------------------------- */
+/* MANIPULAÇÃO DA GALERIA */
+.gallery {
+  background-color: #06d0e0;
+}
+.photoGallery {
+  padding: 4%;
+}
+.gallery-item {
+  border: 5px solid #ffffff; /* Define uma borda de 5px com uma cor personalizada */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra horizontal e vertical de 4px, desfoque de 8px */
+  transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+}
+.gallery h2 {
+  text-align: center;
+  padding: 3%;
+  font-size: 4rem;
+  color: rgb(0, 44, 83); /* Cor do título */
+  font-family: "Parkinsans", serif;
+  font-weight: 600;
+}
+/* ---------------------------------------------------------- */
+/* Estilo para o Contato */
+.page-contato ul {
+  list-style-type: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  display: block; /* Garante que cada item ocupe uma linha */
+  margin-bottom: 10px; /* Adiciona espaçamento entre os itens */
+  padding-bottom: 6%;
+}
+.img-qr2 {
+  height: 100px;
+  margin: 40px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out; /* Animação suave ao passar o mouse */
+}
+a:link {
+  text-decoration: none;
+}
+.img-qr2:hover {
+  transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+}
+.icon {
+  text-align: center;
+}
+.icon h3 {
+  margin-top: 80px;
+}
+
+.text-endereco {
+  color: #000;
+}
+
+/* style Rodape*/
+footer {
+  background-color: rgb(33, 64, 110);
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+}

@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Oswald:wght@200..700&display=swap");
+
+nav {
+  background-color: rgb(33, 64, 110);
+  padding: 20px 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 5px;
+  display: flex;
+  justify-content: center;
+}
+li {
+  margin: 0 25px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #06d0e0;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Alinha logo e texto verticalmente */
+  font-size: 1.2rem; /* Ajusta o tamanho do texto */
+  font-weight: bold; /* Destaca o nome */
+}
+.navbar-brand img {
+  margin-right: 10px; /* Espaçamento entre a logo e o texto */
+}
