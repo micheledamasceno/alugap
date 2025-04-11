@@ -50,7 +50,7 @@ body {
 
 /* -------------------------------------------------------- */
 /* ESTILO PARA AS IMAGENS DE FUNDO */
-.page-section {
+.page-secao {
   background-image: url("https://img.freepik.com/vetores-gratis/fundo-abstrato-branco-minimalista_23-2148816119.jpg?t=st=1736526663~exp=1736530263~hmac=b6b1369075c93b455988d6991e929ce7458106d6726477f337c13729b240000d&w=1380");
   /* Faz com que a imagem de fundo cubra todo o elemento, mantendo sua proporção. */
   background-size: cover; /* não repetir */
@@ -59,7 +59,7 @@ body {
 /* ----------------------------------------------------- */
 
 /* FUNDO DA PÁGINA QUEM SOMOS */
-.page-section-1 {
+.page-secao-1 {
   background-color: rgb(34, 93, 128);
   /* Faz com que a imagem de fundo cubra todo o elemento, mantendo sua proporção. */
   background-size: cover; /* não repetir */
@@ -105,7 +105,7 @@ body {
   border: 0;
 }
 /* MANIPULAÇÃO DOS TITULOS */
-.section-heading h2 {
+.secao-heading h2 {
   text-align: center;
   padding-top: 8%;
   font-size: 4rem;
@@ -113,7 +113,7 @@ body {
   font-family: "Parkinsans", serif;
   font-weight: 600;
 }
-.section-heading h3 {
+.secao-heading h3 {
   text-align: center;
   padding-top: 50px;
   font-size: 2.5rem;
@@ -223,7 +223,7 @@ body {
 }
 /* ---------------------------------------------------------- */
 /* Estilo para o Contato */
-.page-contato ul {
+.info-contato ul {
   list-style-type: none;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 30px;
@@ -232,6 +232,7 @@ body {
   margin-bottom: 10px; /* Adiciona espaçamento entre os itens */
   padding-bottom: 6%;
 }
+
 .img-qr2 {
   height: 100px;
   margin: 40px;
